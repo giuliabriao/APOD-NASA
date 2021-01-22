@@ -1,0 +1,42 @@
+#logo-nasa{
+    width: 100px;
+}
+
+#intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#inputs{
+    display: flex;
+    justify-content: center;
+
+}
+
+input{
+    margin: 5px;
+}
+
+#buttonGenerator{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+}

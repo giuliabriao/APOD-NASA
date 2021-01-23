@@ -1,40 +1,140 @@
 #logo-nasa{
-    width: 100px;
+    width: 200px;
 }
 
 #intro{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: wrap;
+    background-color: black;
+    color: white;
+}
+
+#divImg{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+}
+
+
+#titles{
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    font-size: 40px;
+    font-style: italic;
+}
+
+h2{
+    font-size: 25px;
 }
 
 #inputs{
     display: flex;
     justify-content: center;
-
+    margin-top: 10px;
 }
 
 input{
     margin: 5px;
+    font-size: 20px;
+    width: 100px;
+    height: 20px;
 }
 
-#buttonGenerator{
+label{
+    font-weight: bold;
+}
+
+#containerButton{
     display: flex;
     justify-content: center;
     margin-top: 5px;
 }
 
+#buttonGenerate{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: darkblue;
+    cursor: pointer;
+}
 
+#buttonGenerate:hover{
+    background-color: darkred;
+    color: white;
+}
+
+#containerTitle{
+    display: flex;
+    justify-content: center;
+
+}
+
+.title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 1%;
+}
+
+#containerImgText{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+}
+
+.img{
+    width: 38%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.text{
+    width: 40%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 23px;
+    padding: 1%;
+    letter-spacing: 2px;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    font-size: 50px;
+}
+
+#previousNextButtons{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+}
 
 footer{
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 5%;
     background-color: black;
     color: white;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer p{
+    margin-top: 1%;
 }
 
 footer a{

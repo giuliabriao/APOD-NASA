@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>APOD</title>
 
@@ -10,19 +11,33 @@
 <body>
     <main>
         <div id="intro">
-            <img id="logo-nasa" src="https://logodownload.org/wp-content/uploads/2019/03/nasa-logo-0.png">
-            <h1>Welcome to the Astronomy Picture of the Day!</h1>
-            <h2>Please, write a date beginning on June 16, 1995 and discover the image from that date!</h2>
+            <div id="divImg">
+                <img id="logo-nasa" src="https://logodownload.org/wp-content/uploads/2019/03/nasa-logo-0.png">
+            </div>
+            <div id="titles">
+                <h1>Welcome to the Astronomy Picture of the Day!</h1>
+                <h2>Please, write a date beginning on June 16, 1995 and discover the image from that date!</h2>
+            </div>
         </div>
+
         <div id="inputs">
             <label>Day:<input id="inputDay" type="number" min="1" max="31"></label>    
             <label>Month:<input id="inputMonth" type="number" min="1" max="12"></label>
             <label>Year:<input id="inputYear" type="number" min="1995"></label>
         </div>
 
-        <div id="buttonGenerator"><button id="buttonGenerate"> Generate!</button></div>
+        <div id="containerButton"><button id="buttonGenerate"> Generate!</button></div>
 
-        <div id="container"></div>
+        <div id="containerTitle"></div>
+        <div id="containerImgText"></div>
+
+        <div id="previousNextButtons">
+            <div id="previousDiv"><button id="previous">Previous</button></div>
+            <div id="nextDiv"><button id="next">Next</button></div>  
+        </div>
+            
+        <span id="error"></span>
+
     </main>
 
     <footer>

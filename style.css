@@ -35,20 +35,46 @@ h2{
     font-size: 25px;
 }
 
-#inputs{
+#inputsandButtons{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 10px;
 }
 
-input{
-    margin: 5px;
-    font-size: 20px;
-    width: 100px;
+#previous{
+    margin-left: 25px;
+}
+
+#previous:disabled{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: default;
+}
+
+#next{
+    margin-right: 25px;
+}
+
+#next:disabled{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: default;
+}
+
+.previousNext{
+    width: 90px;
     height: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
 }
 
 label{
+    margin: 5px;
     font-weight: bold;
 }
 

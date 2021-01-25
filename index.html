@@ -20,21 +20,19 @@
             </div>
         </div>
 
-        <div id="inputs">
-            <label>Day:<input id="inputDay" type="number" min="1" max="31"></label>    
-            <label>Month:<input id="inputMonth" type="number" min="1" max="12"></label>
-            <label>Year:<input id="inputYear" type="number" min="1995"></label>
+        <div id="inputsandButtons">
+            <button id="previous" class="previousNext">Previous</button>
+            <div>
+                <label>Choose a date</label>
+                <input id="inputDate" type="date" min="1996-06-16">
+            </div>
+            <button id="next" class="previousNext">Next</button>
         </div>
 
         <div id="containerButton"><button id="buttonGenerate"> Generate!</button></div>
 
         <div id="containerTitle"></div>
         <div id="containerImgText"></div>
-
-        <div id="previousNextButtons">
-            <div id="previousDiv"><button id="previous">Previous</button></div>
-            <div id="nextDiv"><button id="next">Next</button></div>  
-        </div>
             
         <span id="error"></span>
 

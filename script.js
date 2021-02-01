@@ -22,7 +22,7 @@ class container{
 
             let titleContainer = document.createElement("h3");
             titleContainer.setAttribute("class", "title");
-            titleContainer.textContent = `${this.title}`;            
+            titleContainer.textContent = `${this.title}`;
             divTitle.appendChild(titleContainer);
 
             let divImgtext = document.querySelector("#containerImgText");
@@ -88,7 +88,7 @@ function generateApod(){
 
             let spanError = document.querySelector("#error");
             spanError.innerHTML = "";
-            spanError.append(error);            
+            spanError.append(error);
         }
     })
 
